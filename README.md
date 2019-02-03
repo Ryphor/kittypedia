@@ -1,3 +1,13 @@
+## Kittypedia
+
+Kittypedia allows the user to search for cat breeds and see information and images about that breed.
+
+### How to run 
+
+`$ npm i`
+`$ npm start`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

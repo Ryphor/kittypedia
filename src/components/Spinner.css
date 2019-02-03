@@ -1,0 +1,17 @@
+.loader {
+    width: 120px;
+    height: 120px;
+    font-size: 3em;
+    animation: spin 1s linear infinite;
+}
+
+.loadingText {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
