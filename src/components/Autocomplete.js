@@ -9,17 +9,13 @@ import AutosuggestHighlightParse from "autosuggest-highlight/umd/parse";
 import "./Autocomplete.css";
 
 class Autocomplete extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      value: "",
-      suggestions: []
-    };
-  }
+  state = {
+    value: "",
+    suggestions: []
+  };
 
   componentDidMount() {
-    this.setState({suggestions: this.props.listOfBreeds})
+    this.setState({ suggestions: this.props.listOfBreeds });
   }
 
   escapeRegexCharacters(str) {
@@ -51,7 +47,7 @@ class Autocomplete extends Component {
     const suggestionText = `${suggestion.name}`;
     const matches = AutosuggestHighlightMatch(suggestionText, query);
     const parts = AutosuggestHighlightParse(suggestionText, matches);
-    
+
     return (
       <span className="suggestion-content">
         <span className="name">
